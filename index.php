@@ -20,8 +20,10 @@
         echo 'Vous êtes un homme ' . $genre_rand . ' et vous êtes majeur' . ' ' . $age;
     } elseif($age <= 17 && $genre_rand == 'Femme'){
         echo 'Vous êtes une femme ' . $genre_rand . ' et vous êtes mineur' . ' ' . $age;
-    } else{
+    } elseif($age >= 18 && $genre_rand == 'Femme'){
       echo 'Vous êtes une femme ' . $genre_rand . ' et vous êtes majeur' . ' ' . $age;
+    } else{
+      echo 'Personne de sexe inconnue non identifié';
     }
   };
   transgenre();
